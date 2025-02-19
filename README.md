@@ -2,5 +2,6 @@
 
 - **Git**
 - **PackerNvim**
-- **Nodejs** (Allow **Chocolatey** installation in nodejs installer), **Npm**
+- **Nodejs**, **Npm**
+- **Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the web site)
 - **Golang**
