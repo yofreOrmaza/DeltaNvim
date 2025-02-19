@@ -1,7 +1,7 @@
 # Requisitos:
 
-- Git
-- Neovim
-- PackerNvim
-- Nodejs (with Chocolatey), Npm
-- Golang
+- **Git**
+- **Neovim**
+- **PackerNvim**
+- **Nodejs** (Allow **Chocolatey** installation in nodejs installer), **Npm**
+- **Golang**
