@@ -3,5 +3,5 @@
 - Git
 - Neovim
 - PackerNvim
-- Nodejs, Npm
+- Nodejs (with Chocolatey), Npm
 - Golang
