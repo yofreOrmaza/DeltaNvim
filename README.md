@@ -9,5 +9,6 @@
 
 # Usage
 
-- In the windows terminal enter neovim using ```nvim```
-- To find the configuration folder for neovim type from neovim ```:echo stdpath('config')```
+- In the windows terminal **enter neovim** using ```nvim```
+- To **find the configuration folder for neovim** type from neovim ```:echo stdpath('config')```
+- In that location there can only be a single folder called nvim, if the nvim folder already exists but it is not the cloned one: delete it, and then **clone the repository** there, and then rename the DeltaNvim folder as nvim, and that's it. But if the nvim folder does not exist: clone the repository there and rename the folder as nvim, and that's it (and if there is a folder called nvim-data: delete it)
