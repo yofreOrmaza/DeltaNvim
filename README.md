@@ -15,3 +15,10 @@
 - In the windows terminal **enter neovim** using ```nvim```
 - To start the **installation of DeltaNvim packages**, type from neovim ```:PackerInstall```
 - **Recommended font:** In the fonts folder there is a set of JetBrains fonts, from File Explorer select all fonts and right click on install. Then from the windows console configuration (powershell or cmd) go to the Profiles section and select Defaults, then select Appearance, and in the Font face box select a JetBrains font (**JetBrainsMono Nerd Font Mono** as a personal recommendation) **This font allows the display of icons for both folders and file type, and also for special characters** that aesthetically improve the visualization of the code. And finally click on save.
+
+# Features
+
+- **Integrated terminal** with <kbd>Ctrl</kbd> + <kbd>j</kbd>
+- **LSP server manager**, **DAP servers**, **linters** and **formatters** with ```:Mason```
+- A **file explorer tree** with <kbd>Ctrl</kbd> + <kbd>b</kbd>
+- **Quick and easy mappings** (👀 check lua/keymaps.lua file)
