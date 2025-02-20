@@ -22,3 +22,15 @@
 - **LSP server manager**, **DAP servers**, **linters** and **formatters** with ```:Mason```
 - A **file explorer tree** with <kbd>Ctrl</kbd> + <kbd>b</kbd>
 - **Quick and easy mappings** (👀 check lua/keymaps.lua file)
+
+# DeltaNvim Development Environments (Quickstart)
+
+<details>
+  <summary>Python + Mason</summary>
+
+  - Pyright (LSP installation already automated with mason)
+  - Pylint (manual installation with mason) linter
+  - Black (manual installation with mason) formatter#1
+  - Isort (manual installation with mason) formatter#2
+
+</details>
