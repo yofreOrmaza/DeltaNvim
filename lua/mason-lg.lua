@@ -1,6 +1,6 @@
 require("mason-lspconfig").setup({
     ensure_installed = {
-        'gopls', -- (gopls)
+        --'gopls', -- (gopls)
         --'html',
         --'emmet_language_server',
         --'cssls', -- Css, Scss, Less
