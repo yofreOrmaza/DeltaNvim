@@ -32,6 +32,5 @@
   - Pyright (LSP **installation already automated** with mason)
   - Pylint (**manual installation** with mason) linter
   - Black (**manual installation** with mason, **and upgrade with pip** ```pip install --upgrade black```) formatter#1
-  - Isort (**manual installation** with mason) formatter#2
 
 </details>
