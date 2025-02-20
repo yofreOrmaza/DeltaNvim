@@ -1,5 +1,9 @@
 require("mason-lspconfig").setup({
     ensure_installed = {
+        'pyright', -- Deltanvim Python LSP
+        --'pylint', -- Deltanvim Python Linter
+        --'black', -- Deltanvim Python Formatter #1
+        --'isort', -- Deltanvim Python Formatter #2
         --'gopls', -- (gopls)
         --'html',
         --'emmet_language_server',
