@@ -1,5 +1,6 @@
 # Requisitos:
 
+- **Python>3**
 - **Git**
 - **PackerNvim**
 - **Nodejs**, **Npm**
