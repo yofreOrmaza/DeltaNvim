@@ -25,7 +25,6 @@ return require("packer").startup(function(use)
         }
     }
     use 'nvim-treesitter/nvim-treesitter'
-    use 'stevearc/conform.nvim'
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
