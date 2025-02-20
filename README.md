@@ -1,6 +1,7 @@
 # Requisitos:
 
 - **Python>3**
+- **Upgrade PIP** to the latest version with ```python.exe -m pip install --upgrade pip```
 - **Git**
 - **Nodejs**, **Npm**
 - In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
@@ -28,9 +29,9 @@
 <details>
   <summary>Python + Mason</summary>
 
-  - Pyright (LSP installation already automated with mason)
-  - Pylint (manual installation with mason) linter
-  - Black (manual installation with mason) formatter#1
-  - Isort (manual installation with mason) formatter#2
+  - Pyright (LSP **installation already automated** with mason)
+  - Pylint (**manual installation** with mason) linter
+  - Black (**manual installation** with mason, **and upgrade with pip** ```pip install --upgrade black```) formatter#1
+  - Isort (**manual installation** with mason) formatter#2
 
 </details>
