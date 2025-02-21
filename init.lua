@@ -19,6 +19,7 @@ require('themes')
 require('toggleterminal')
 require('tree')
 require('treesitter')
+require('better-diagnostics')
 
 -- lg/lsp
 require('mason-global')
