@@ -20,7 +20,7 @@ require('sttuslinenvim')
 require('toggleterminal')
 require('tree')
 require('treesitter')
-require('better-diagnostics')
+require('gitsignsnvim')
 
 -- lg/lsp
 require('mason-global')

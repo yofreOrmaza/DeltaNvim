@@ -20,7 +20,13 @@ return require("packer").startup(function(use)
         }
     }
     use 'nvim-treesitter/nvim-treesitter'
-    use 'sontungexpt/better-diagnostic-virtual-text'
+    use {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require('gitsigns').setup()
+            require("scrollbar.handlers.gitsigns").setup()
+        end
+    }
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
