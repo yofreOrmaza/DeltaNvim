@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
     -- apariencia
     use 'wuelnerdotexe/vim-enfocado'
     use 'tiagovla/tokyodark.nvim'
+    use 'sontungexpt/sttusline'
 
     -- plugins
     use 'akinsho/toggleterm.nvim'

@@ -14,6 +14,7 @@ require('autopairs')
 
 -- apariencia
 require('themes')
+require('sttuslinenvim')
 
 --plugins
 require('toggleterminal')
