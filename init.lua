@@ -20,6 +20,7 @@ require('sttuslinenvim')
 require('toggleterminal')
 require('tree')
 require('treesitter')
+require('scrollbarnvim')
 require('gitsignsnvim')
 
 -- lg/lsp
