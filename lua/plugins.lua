@@ -28,6 +28,7 @@ return require("packer").startup(function(use)
             require("scrollbar.handlers.gitsigns").setup()
         end
     }
+    use 'dgagn/diagflow.nvim'
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
