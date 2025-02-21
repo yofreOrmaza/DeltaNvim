@@ -29,7 +29,9 @@
 <details>
   <summary>Python + Mason</summary>
 
-  - Pyright (LSP **installation already automated** with mason)
-  - Pylint (**manual installation** with mason) linter
+  - Pyright (LSP **installation already automated** with mason) LSP
+  - Pylint (**manual installation** with mason) Linter
+  - Mypy (**manual installation** with mason) Type checker
+  - Black (**manual installation** with mason) Formatter
 
 </details>
