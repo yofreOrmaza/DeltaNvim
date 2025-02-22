@@ -34,10 +34,10 @@ require("scrollbar").setup({
             highlight = "Search",
         },
         Error = {
-            text = { "-", "=" },
+            text = { "", "=" },
             priority = 2,
             gui = nil,
-            color = nil,
+            color = "#FF0B30",
             cterm = nil,
             color_nr = nil, -- cterm
             highlight = "DiagnosticVirtualTextError",
@@ -61,7 +61,7 @@ require("scrollbar").setup({
             highlight = "DiagnosticVirtualTextInfo",
         },
         Hint = {
-            text = { "-", "=" },
+            text = { "💡", "=" },
             priority = 5,
             gui = nil,
             color = nil,

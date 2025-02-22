@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
         end
     }
     use 'dgagn/diagflow.nvim'
+    use 'lewis6991/satellite.nvim'
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'

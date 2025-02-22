@@ -5,6 +5,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.keymap.set('n', 'u', ':keepjumps normal! ggVG<CR>')
+vim.opt.signcolumn = "yes"
 
 --vim.opt.nocompatible = true
 vim.opt.encoding = "UTF-8"

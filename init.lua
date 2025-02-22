@@ -23,6 +23,7 @@ require('treesitter')
 require('scrollbarnvim')
 require('gitsignsnvim')
 require('diagflownvim')
+require('nvimsatellite')
 
 -- lg/lsp
 require('mason-global')
