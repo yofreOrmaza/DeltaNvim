@@ -23,6 +23,8 @@
 - **LSP server manager**, **DAP servers**, **linters** and **formatters** with ```:Mason```
 - A **file explorer tree** with <kbd>Ctrl</kbd> + <kbd>b</kbd>
 - **Quick and easy mappings** (👀 check lua/keymaps.lua file)
+- **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
+- Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
 
 # DeltaNvim Development Environments (Quickstart)
 

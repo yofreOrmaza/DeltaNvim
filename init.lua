@@ -14,12 +14,17 @@ require('autopairs')
 
 -- apariencia
 require('themes')
+require('sttuslinenvim')
 
 --plugins
 require('toggleterminal')
 require('tree')
 require('treesitter')
-require('better-diagnostics')
+require('scrollbarnvim')
+require('gitsignsnvim')
+require('diagflownvim')
+require('nvimsatellite')
+require('nvimtrouble')
 
 -- lg/lsp
 require('mason-global')

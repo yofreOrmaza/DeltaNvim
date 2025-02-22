@@ -9,6 +9,7 @@ return require("packer").startup(function(use)
     -- apariencia
     use 'wuelnerdotexe/vim-enfocado'
     use 'tiagovla/tokyodark.nvim'
+    use 'sontungexpt/sttusline'
 
     -- plugins
     use 'akinsho/toggleterm.nvim'
@@ -19,7 +20,25 @@ return require("packer").startup(function(use)
         }
     }
     use 'nvim-treesitter/nvim-treesitter'
-    use 'sontungexpt/better-diagnostic-virtual-text'
+    use 'petertriho/nvim-scrollbar'
+    use {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require('gitsigns').setup()
+            require("scrollbar.handlers.gitsigns").setup()
+        end
+    }
+    use 'dgagn/diagflow.nvim'
+    use 'lewis6991/satellite.nvim'
+    use {
+        'folke/trouble.nvim',
+        config = function()
+            require('trouble').setup({
+                opts = {},
+                cmd = "Trouble",
+            })
+        end
+    }
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
