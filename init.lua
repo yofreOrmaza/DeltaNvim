@@ -24,6 +24,7 @@ require('scrollbarnvim')
 require('gitsignsnvim')
 require('diagflownvim')
 require('nvimsatellite')
+require('nvimtrouble')
 
 -- lg/lsp
 require('mason-global')

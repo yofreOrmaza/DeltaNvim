@@ -30,6 +30,15 @@ return require("packer").startup(function(use)
     }
     use 'dgagn/diagflow.nvim'
     use 'lewis6991/satellite.nvim'
+    use {
+        'folke/trouble.nvim',
+        config = function()
+            require('trouble').setup({
+                opts = {},
+                cmd = "Trouble",
+            })
+        end
+    }
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
