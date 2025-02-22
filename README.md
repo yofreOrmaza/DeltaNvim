@@ -25,6 +25,7 @@
 - **Quick and easy mappings** (👀 check lua/keymaps.lua file)
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
+- **Live server for Markdown files** 📝 with ```:MarkdownPreview```
 
 # DeltaNvim Development Environments (Quickstart)
 
