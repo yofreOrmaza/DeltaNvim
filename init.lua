@@ -25,6 +25,7 @@ require('gitsignsnvim')
 require('diagflownvim')
 require('nvimsatellite')
 require('nvimtrouble')
+require('nulllsnvim')
 
 -- lg/lsp
 require('mason-global')

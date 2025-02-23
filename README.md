@@ -42,6 +42,7 @@
 - **REPL interactive in DeltaNvim** 👨‍💻
     - With <kbd>ctrl</kbd> + <kbd>j</kbd> to enable the terminal
     - And then on the line of code or the code fragment, press <kbd>Ctrl + c</kbd> <kbd>Ctrl + c</kbd>
+    - Enter ```julia``` in the terminal to start the REPL **if** the terminal failed to launch in the previous step
     - **(Note)** Check the lua/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment)
 
 # DeltaNvim Development Environments (Quickstart)
@@ -50,7 +51,7 @@
   <summary>Python + Mason</summary>
 
   - Pyright (**manual installation** with mason) LSP
-  - Pylint (**manual installation** with mason) Linter
+  - Flake8 (**manual installation** with mason) Linter
   - Mypy (**manual installation** with mason) Type checker
   - Black (**manual installation** with mason) Formatter
 

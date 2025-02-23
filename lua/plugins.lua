@@ -48,6 +48,10 @@ return require("packer").startup(function(use)
         ft = { "markdown" },
     })
     use 'jpalardy/vim-slime'
+    use({
+        'jose-elias-alvarez/null-ls.nvim',
+        requires = { 'nvim-lua/plenary.nvim' },
+    })
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
