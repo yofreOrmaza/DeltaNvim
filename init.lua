@@ -4,31 +4,31 @@ vim.o.relativenumber = true
 vim.o.number = true
 vim.opt.termguicolors = true
 
-require('plugins')
+require('config.lazy')
 
 -- general
-require('keymaps')
-require('environment')
-require('autosave')
-require('autopairs')
+require('plugins.keymaps')
+require('plugins.environment')
+require('plugins.autosave')
+require('plugins.autopairs')
 
 -- apariencia
-require('themes')
-require('sttuslinenvim')
+require('plugins.themes')
+require('plugins.sttuslinenvim')
 
 --plugins
-require('toggleterminal')
-require('tree')
-require('treesitter')
-require('scrollbarnvim')
-require('gitsignsnvim')
-require('diagflownvim')
-require('nvimsatellite')
-require('nvimtrouble')
-require('nulllsnvim')
+require('plugins.toggleterminal')
+require('plugins.tree')
+require('plugins.treesitter')
+require('plugins.scrollbarnvim')
+require('plugins.gitsignsnvim')
+require('plugins.diagflownvim')
+require('plugins.nvimsatellite')
+require('plugins.nvimtrouble')
+require('plugins.nulllsnvim')
 
 -- lg/lsp
-require('mason-global')
-require('mason-lg')
-require('l-lspconfig')
-require('l-lspzero')
+require('plugins.mason-global')
+require('plugins.mason-lg')
+require('plugins.l-lspconfig')
+require('plugins.l-lspzero')
