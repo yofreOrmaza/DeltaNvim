@@ -30,3 +30,8 @@ vim.opt.list = false
 -- Activar resaltado de línea de cursor
 vim.opt.cursorline = true
 vim.cmd('highlight CursorLine guibg=#3c3836')
+
+-- Configuraciones para vim-slime y toggleterm
+vim.g.slime_target = "neovim" -- "tmux", "etc.."
+vim.g.slime_python_ipython = 0
+vim.g.slime_default_config = { jobid = "terminal" }

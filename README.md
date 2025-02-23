@@ -39,6 +39,10 @@
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
 - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
+- **REPL interactive in DeltaNvim** 👨‍💻
+    - With <kbd>ctrl</kbd> + <kbd>j</kbd> to enable the terminal
+    - And then on the line of code or the code fragment, press <kbd>Ctrl + c</kbd> <kbd>Ctrl + c</kbd>
+    - **(Note)** Check the lua/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment)
 
 # DeltaNvim Development Environments (Quickstart)
 
@@ -49,5 +53,13 @@
   - Pylint (**manual installation** with mason) Linter
   - Mypy (**manual installation** with mason) Type checker
   - Black (**manual installation** with mason) Formatter
+
+</details>
+
+<details>
+  <summary>Julia</summary>
+
+  - **Download Julia** from the [website](https://julialang.org/downloads/), and install
+  - Check out DeltaNvim's features for quick use of REPL
 
 </details>

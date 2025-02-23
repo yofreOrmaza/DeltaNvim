@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
         end,
         ft = { "markdown" },
     })
+    use 'jpalardy/vim-slime'
 
     -- lg/lsp
     use 'neovim/nvim-lspconfig'
