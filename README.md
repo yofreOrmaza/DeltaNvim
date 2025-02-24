@@ -22,10 +22,25 @@
 
 # Usage
 
-- In the windows terminal **enter neovim** using ```nvim```
-- To **find the configuration folder for neovim** type from neovim ```:echo stdpath('config')```
-- In that location there can only be a single folder called nvim, if the nvim folder already exists but it is not the cloned one: delete it, and then **clone the repository** there, **and then rename the DeltaNvim folder as nvim**, and that's it. But if the nvim folder does not exist: clone the repository there and rename the folder as nvim, and that's it
-- In the windows terminal **enter neovim** using ```nvim```
+<details>
+  <summary> Windows</summary>
+
+  - **Clone the repository** to the location ```AppData/Local/```
+  - From the file explorer **go to the ```AppData/Local/DeltaNvim/bin/``` folder**, and **run the file dnvim.bat** (Windows Batch File)
+  
+</details>
+
+<details>
+  <summary>/ Linux/Mac</summary>
+
+  - **Clone the repository** to the location ```.config/```
+  - From the terminal, **go to the .config/DeltaNvim/bin/ folder**
+  - **Grant execution permissions** to the dnvim file with ```chmod +x dnvim``` and **execute the file** with ```./dnvim```
+  
+</details>
+
+- In the windows terminal **enter DeltaNvim** using ```dnvim```
+- To **find the configuration folder for DeltaNvim** type from neovim ```:echo stdpath('config')```
 - **Recommended font:** In the fonts folder there is a set of JetBrains fonts, from File Explorer select all fonts and right click on install. Then from the windows console configuration (powershell or cmd) go to the Profiles section and select Defaults, then select Appearance, and in the Font face box select a JetBrains font (**JetBrainsMono Nerd Font Mono** as a personal recommendation) **This font allows the display of icons for both folders and file type, and also for special characters** that aesthetically improve the visualization of the code. And finally click on save.
 
 # Features

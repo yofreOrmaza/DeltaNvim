@@ -8,7 +8,7 @@
   "diagflow.nvim": { "branch": "main", "commit": "9a05fda174038d349845efc70422bda4ce86b185" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "gitsigns.nvim": { "branch": "main", "commit": "4c40357994f386e72be92a46f41fc1664c84c87d" },
-  "lazy.nvim": { "branch": "main", "commit": "e5e9bf48211a13d9ee6c1077c88327c49c1ab4a0" },
+  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
   "lsp-zero.nvim": { "branch": "v1.x", "commit": "aa36afcf7a59fbd98008c9a434593c423d3d649a" },
   "lspsaga.nvim": { "branch": "main", "commit": "da8a66c53241876bba140980469876db3a183604" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
