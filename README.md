@@ -22,23 +22,19 @@
 
 # Usage
 
-- AS ADMIN (PS C:\WINDOWS\system32> cd ..\..\Users\yofre\AppData\Local\DeltaNvim\) windows (powershell):
-    clonar repo en AppData/Local/ -> AppData/Local/DeltaNvim
-    entrar a la carpeta DeltaNvim con "cd DeltaNvim"
-    ejecutar el instalador
-        1. "Set-ExecutionPolicy Bypass -Scope Process -Force"
-        2. ".\lua\config\install.ps1"
+- windows:
+    desde powershell (o cmd) clonar repo en AppData/Local/ -> AppData/Local/DeltaNvim
+    desde el explorador de archivos de windows entrar en la carpeta "AppData/Local/DeltaNvim/bin/" y ejecutar el archivo "dnvim.bat"(windows batch file)
+    Esperar a que el entorno se configure
+    "dnvim" en powershell desde ahora para separar la configuración de neovim vanilla
 
-- AS ADMIN linux
+- linux (terminal)
     clonar repo en .config/ -> .config/DeltaNvim
-    entrar a la carpeta DeltaNvim con "cd DeltaNvim"
-    ejecutar el instalador "chmod +x lua/config/install.sh" y luego "./lua/config/install.sh"
-    dnvim
+    entrar a la carpeta DeltaNvim con "cd .config/DeltaNvim/bin/", otorgarle permisos de ejecución al archivo "dnvim.sh" con "chmod +x dnvim.sh". Y finalmente ejecutarlo con "./dnvim.sh" (o "sh dnvim.sh", o "bash dnvim.sh")
+    "dnvim" en terminal desde ahora para separar la configuración de neovim vanilla
 
-- In the windows terminal **enter neovim** using ```nvim```
-- To **find the configuration folder for neovim** type from neovim ```:echo stdpath('config')```
-- In that location there can only be a single folder called nvim, if the nvim folder already exists but it is not the cloned one: delete it, and then **clone the repository** there, **and then rename the DeltaNvim folder as nvim**, and that's it. But if the nvim folder does not exist: clone the repository there and rename the folder as nvim, and that's it
-- In the windows terminal **enter neovim** using ```nvim```
+- In the windows terminal **enter DeltaNvim** using ```dnvim```
+- To **find the configuration folder for DeltaNvim** type from neovim ```:echo stdpath('config')```
 - **Recommended font:** In the fonts folder there is a set of JetBrains fonts, from File Explorer select all fonts and right click on install. Then from the windows console configuration (powershell or cmd) go to the Profiles section and select Defaults, then select Appearance, and in the Font face box select a JetBrains font (**JetBrainsMono Nerd Font Mono** as a personal recommendation) **This font allows the display of icons for both folders and file type, and also for special characters** that aesthetically improve the visualization of the code. And finally click on save.
 
 # Features
