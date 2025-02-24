@@ -22,16 +22,22 @@
 
 # Usage
 
-- windows:
-    desde powershell (o cmd) clonar repo en AppData/Local/ -> AppData/Local/DeltaNvim
-    desde el explorador de archivos de windows entrar en la carpeta "AppData/Local/DeltaNvim/bin/" y ejecutar el archivo "dnvim.bat"(windows batch file)
-    Esperar a que el entorno se configure
-    "dnvim" en powershell desde ahora para separar la configuración de neovim vanilla
+<details>
+  <summary> Windows</summary>
 
-- linux (terminal)
-    clonar repo en .config/ -> .config/DeltaNvim
-    entrar a la carpeta DeltaNvim con "cd .config/DeltaNvim/bin/", otorgarle permisos de ejecución al archivo "dnvim.sh" con "chmod +x dnvim.sh". Y finalmente ejecutarlo con "./dnvim.sh" (o "sh dnvim.sh", o "bash dnvim.sh")
-    "dnvim" en terminal desde ahora para separar la configuración de neovim vanilla
+  - **Clone the repository** to the location ```AppData/Local/```
+  - From the file explorer **go to the ```AppData/Local/DeltaNvim/bin/``` folder**, and **run the file dnvim.bat** (Windows Batch File)
+  
+</details>
+
+<details>
+  <summary>/ Linux/Mac</summary>
+
+  - **Clone the repository** to the location ```.config/```
+  - From the terminal, **go to the .config/DeltaNvim/bin/ folder**
+  - **Grant execution permissions** to the dnvim file with ```chmod +x dnvim``` and **execute the file** with ```./dnvim```
+  
+</details>
 
 - In the windows terminal **enter DeltaNvim** using ```dnvim```
 - To **find the configuration folder for DeltaNvim** type from neovim ```:echo stdpath('config')```
