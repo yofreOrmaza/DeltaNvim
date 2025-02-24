@@ -22,7 +22,7 @@
 
 # Usage
 
-- AS ADMIN windows (powershell):
+- AS ADMIN (PS C:\WINDOWS\system32> cd ..\..\Users\yofre\AppData\Local\DeltaNvim\) windows (powershell):
     clonar repo en AppData/Local/ -> AppData/Local/DeltaNvim
     entrar a la carpeta DeltaNvim con "cd DeltaNvim"
     ejecutar el instalador
