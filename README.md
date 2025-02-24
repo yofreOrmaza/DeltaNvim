@@ -22,14 +22,14 @@
 
 # Usage
 
-- windows:
+- AS ADMIN windows (powershell):
     clonar repo en AppData/Local/ -> AppData/Local/DeltaNvim
     entrar a la carpeta DeltaNvim con "cd DeltaNvim"
     ejecutar el instalador
         1. "Set-ExecutionPolicy Bypass -Scope Process -Force"
         2. ".\lua\config\install.ps1"
 
-- linux
+- AS ADMIN linux
     clonar repo en .config/ -> .config/DeltaNvim
     entrar a la carpeta DeltaNvim con "cd DeltaNvim"
     ejecutar el instalador "chmod +x lua/config/install.sh" y luego "./lua/config/install.sh"
