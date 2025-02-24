@@ -67,6 +67,7 @@ local plugins = {
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
     },
+    { 'nvimdev/lspsaga.nvim' }
 }
 
 require("lazy").setup(plugins, {})
