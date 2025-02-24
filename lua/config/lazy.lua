@@ -44,7 +44,6 @@ local plugins = {
         end,
         ft = { 'markdown' },
     },
-    { 'jpalardy/vim-slime' },
     { 'jose-elias-alvarez/null-ls.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
