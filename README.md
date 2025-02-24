@@ -36,6 +36,7 @@
 - **Quick and easy mappings** (👀 check lua/plugins/keymaps.lua file)
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
+- Available code actions 💡 press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the \<leader\> key) 
 <!-- - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
 - **REPL interactive in DeltaNvim** 👨‍💻
     - windows (install wezterm terminal with Chocolatey in ADMIN modo ```choco install wezterm -y``` o desde su [sitio web](https://wezterm.org/))
