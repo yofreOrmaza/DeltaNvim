@@ -36,6 +36,7 @@
 - **Quick and easy mappings** (👀 check lua/plugins/keymaps.lua file)
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
+- Available code actions 💡 press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the \<leader\> key) 
 <!-- - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
 - **REPL interactive in DeltaNvim** 👨‍💻
     - windows (install wezterm terminal with Chocolatey in ADMIN modo ```choco install wezterm -y``` o desde su [sitio web](https://wezterm.org/))
@@ -45,7 +46,6 @@
     - And then on the line of code or the code fragment, press <kbd>Ctrl + c</kbd> <kbd>Ctrl + c</kbd>
     - Enter ```julia``` in the terminal to start the REPL **if** the terminal failed to launch in the previous step
     - **(Note)** Check the lua/plugins/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment) -> por defecto (wezterm para windows) -->
-- Available code actions 💡, press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the <leader> key) 
 
 # DeltaNvim Development Environments (Quickstart)
 
