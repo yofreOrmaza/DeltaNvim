@@ -1,3 +1,3 @@
 @echo off
-set NVIM_APPNAME=deltanvim
+set NVIM_APPNAME=DeltaNvim
 nvim %*

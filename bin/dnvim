@@ -1,2 +1,2 @@
 #!/bin/sh
-NVIM_APPNAME="deltanvim" nvim "$@"
+NVIM_APPNAME="DeltaNvim" nvim "$@"

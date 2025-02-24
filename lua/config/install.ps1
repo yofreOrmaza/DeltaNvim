@@ -15,5 +15,5 @@ Copy-Item -Path "$PSScriptRoot\..\..\bin" -Destination $configDir -Recurse
 $userPath = [Environment]::GetEnvironmentVariable('Path', 'User')
 if ($userPath -notmatch [Regex]::Escape($binDir)) {
     [Environment]::SetEnvironmentVariable('Path', "$userPath;$binDir", 'User')
-    Write-Host "DeltaNvim has been added to your PATH. Please restart your terminal."
+    Write-Host "Se ha agregado DeltaNvim a tu PATH. Por favor reinicia tu terminal."
 }
