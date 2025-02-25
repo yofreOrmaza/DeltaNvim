@@ -37,13 +37,6 @@ local plugins = {
     { 'dgagn/diagflow.nvim' },
     { 'lewis6991/satellite.nvim'},
     { 'folke/trouble.nvim' },
-    { 'iamcco/markdown-preview.nvim',
-        build = 'cd app && npm install',
-        setup = function()
-            vim.g.mkdp_filetypes = { 'markdown' }
-        end,
-        ft = { 'markdown' },
-    },
     { 'jose-elias-alvarez/null-ls.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
