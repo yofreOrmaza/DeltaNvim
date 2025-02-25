@@ -23,7 +23,7 @@
 # Usage
 
 <details>
-  <summary> Windows</summary>
+  <summary>🖥️ Windows</summary>
 
   - **Clone the repository** to the location ```AppData/Local/```
   - From the terminal, **go to the AppData/Local/DeltaNvim/ folder**
@@ -33,7 +33,7 @@
 </details>
 
 <details>
-  <summary>/ Linux/Mac</summary>
+  <summary>💻 Linux/Mac</summary>
 
   - **Clone the repository** to the location ```.config/```
   - From the terminal, **go to the .config/DeltaNvim/ folder**
