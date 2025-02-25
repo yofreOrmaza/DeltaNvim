@@ -37,6 +37,7 @@
   - **Clone the repository** to the location ```.config/```
   - From the terminal, **go to the .config/DeltaNvim/ folder**
   - **Give permissions** to the install.sh file with ```chmod +x install.sh```, and **execute it** with ```./install```
+  - Restart the terminal
 
 </details>
 
