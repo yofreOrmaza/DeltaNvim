@@ -27,6 +27,7 @@
 
   - **Clone the repository** to the location ```AppData/Local/```
   - From the file explorer **go to the ```AppData/Local/DeltaNvim/bin/``` folder**, and **run the file dnvim.bat** (Windows Batch File)
+    <!-- Si no funciona lo anterior pues "Mueve el archivo dnvim.bat a un directorio en el PATH (por ejemplo, C:\Windows\System32)."-->
   
 </details>
 
@@ -35,7 +36,8 @@
 
   - **Clone the repository** to the location ```.config/```
   - From the terminal, **go to the .config/DeltaNvim/bin/ folder**
-  - **Grant execution permissions** to the dnvim file with ```chmod +x dnvim``` and **execute the file** with ```./dnvim```
+  - **Move the dnvim script** to ```/usr/local/bin``` with ```sudo mv dnvim /usr/local/bin/```
+  - **Grant execution permissions** to the dnvim file with ```sudo chmod +x /usr/local/bin/dnvim``` <!--and **execute the file** with ```./dnvim```-->
   
 </details>
 
