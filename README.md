@@ -26,7 +26,9 @@
   <summary> Windows</summary>
 
   - **Clone the repository** to the location ```AppData/Local/```
-  - From the file explorer **go to the ```AppData/Local/DeltaNvim/bin/``` folder**, and **run the file dnvim.bat** (Windows Batch File)
+  - From the terminal, **go to the AppData/Local/DeltaNvim/ folder**
+  - **Give permissions** to the install.ps1 file with ```Set-ExecutionPolicy Bypass -Scope Process -Force```, and **execute it** with ```.\install.ps1```
+  - Restart the terminal
   
 </details>
 
@@ -34,9 +36,10 @@
   <summary>/ Linux/Mac</summary>
 
   - **Clone the repository** to the location ```.config/```
-  - From the terminal, **go to the .config/DeltaNvim/bin/ folder**
-  - **Grant execution permissions** to the dnvim file with ```chmod +x dnvim``` and **execute the file** with ```./dnvim```
-  
+  - From the terminal, **go to the .config/DeltaNvim/ folder**
+  - **Give permissions** to the install.sh file with ```chmod +x install.sh```, and **execute it** with ```./install```
+  - Restart the terminal
+
 </details>
 
 - In the windows terminal **enter DeltaNvim** using ```dnvim```
