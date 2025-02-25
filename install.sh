@@ -16,5 +16,5 @@ chmod +x "$CONFIG_DIR/bin/dnvim"
 if [[ ":$PATH:" != *":$CONFIG_DIR/bin:"* ]]; then
   echo 'export PATH="$PATH:'"$CONFIG_DIR/bin"'"' >> ~/.bashrc
   echo 'export PATH="$PATH:'"$CONFIG_DIR/bin"'"' >> ~/.zshrc
-  echo "Se ha agregado DeltaNvim a tu PATH. Por favor reinicia tu terminal."
+  echo "DeltaNvim has been added to your PATH. Please restart your terminal."
 fi
