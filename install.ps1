@@ -23,7 +23,7 @@ $userPath = [Environment]::GetEnvironmentVariable('Path', 'User')
 
 if ($userPath -notmatch [Regex]::Escape($binPath)) {
     [Environment]::SetEnvironmentVariable('Path', "$userPath;$binPath", 'User')
-    Write-Host "Se ha agregado DeltaNvim a tu PATH. Por favor reinicia tu terminal."
+    Write-Host "DeltaNvim has been added to your PATH. Please restart your terminal."
 } else {
-    Write-Host "DeltaNvim ya está en tu PATH."
+    Write-Host "DeltaNvim is already in your PATH."
 }
