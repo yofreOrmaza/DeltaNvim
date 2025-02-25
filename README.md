@@ -26,8 +26,9 @@
   <summary> Windows</summary>
 
   - **Clone the repository** to the location ```AppData/Local/```
-  - From the file explorer **go to the ```AppData/Local/DeltaNvim/bin/``` folder**, and **run the file dnvim.bat** (Windows Batch File)
-    <!-- Si no funciona lo anterior pues "Mueve el archivo dnvim.bat a un directorio en el PATH (por ejemplo, C:\Windows\System32)."-->
+  - From the terminal, **go to the AppData/Local/DeltaNvim/ folder**
+  - **Give permissions** to the install.ps1 file with ```Set-ExecutionPolicy Bypass -Scope Process -Force```, and **execute it** with ```.\install.ps1```
+  - Restart the terminal
   
 </details>
 
