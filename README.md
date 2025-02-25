@@ -35,10 +35,32 @@
   <summary>/ Linux/Mac</summary>
 
   - **Clone the repository** to the location ```.config/```
-  - From the terminal, **go to the .config/DeltaNvim/bin/ folder**
-  - **Move the dnvim script** to ```/usr/local/bin``` with ```sudo mv dnvim /usr/local/bin/```
-  - **Grant execution permissions** to the dnvim file with ```sudo chmod +x /usr/local/bin/dnvim``` <!--and **execute the file** with ```./dnvim```-->
-  
+  - From the terminal, **go to the .config/DeltaNvim/ folder**
+  - Darle permisos al archivo install.sh con chmod +x install.sh, y ejecutarlo con ./install.sh
+
+#!/bin/bash
+
+# Crear directorio de configuración
+CONFIG_DIR="$HOME/.config/DeltaNvim"
+mkdir -p "$CONFIG_DIR"
+
+# Copiar archivos necesarios
+cp init.lua "$CONFIG_DIR"
+cp -r lua "$CONFIG_DIR"
+cp -r bin "$CONFIG_DIR"
+
+# Hacer ejecutable el script
+chmod +x "$CONFIG_DIR/bin/dnvim"
+
+# Agregar al PATH
+if [[ ":$PATH:" != *":$CONFIG_DIR/bin:"* ]]; then
+  echo 'export PATH="$PATH:'"$CONFIG_DIR/bin"'"' >> ~/.bashrc
+  echo 'export PATH="$PATH:'"$CONFIG_DIR/bin"'"' >> ~/.zshrc
+  echo "Se ha agregado DeltaNvim a tu PATH. Por favor reinicia tu terminal."
+fi
+
+---
+
 </details>
 
 - In the windows terminal **enter DeltaNvim** using ```dnvim```
