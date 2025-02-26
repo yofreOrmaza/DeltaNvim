@@ -3,15 +3,28 @@ local username = os.getenv('USER') or os.getenv('USERNAME')  -- Multiplataforma
 require('dashboard').setup {
     config = {
         header = {
-            "    ╔╦╗┌─┐┬ ┌┬┐┌─┐╔╗╔┬  ┬┬┌┬┐ ",
-            "     ║║├┤ │  │ ├─┤║║║└┐┌┘││││ ",
-            "Welcome to ═╩╝└─┘┴─┘┴ ┴ ┴╝╚╝ └┘ ┴┴ ┴ " .. ", " .. username .."!",
-            --"Welcome to DeltaNvim, " .. username .. "!",
+            "            ",
+            "     db     ",
+            "    ;MM:    ",
+            "   ,V^MM.   ",
+            "  ,M  `MM   ",
+            "  A'   `MA  ",
+            " A'     VML ",
+            "AMMMMMMMMMMA",
+            --"┳┓  ┓   ┳┓  •   ",
+            --"┃┃┏┓┃╋┏┓┃┃┓┏┓┏┳┓",
+            --"┻┛┗ ┗┗┗┻┛┗┗┛┗┛┗┗",
+            "                ",
+            "Welcome to DeltaNvim, " .. username .. "!",
         },
         footer = {
             "",
-            "yes"
+            "┳┓  ┓   ┳┓  •   ",
+            "┃┃┏┓┃╋┏┓┃┃┓┏┓┏┳┓",
+            "┻┛┗ ┗┗┗┻┛┗┗┛┗┛┗┗",
+            "",
         },
         shortcut = {},
+        project = { enable = false },
     },
 }
