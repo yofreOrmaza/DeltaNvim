@@ -20,6 +20,10 @@ local plugins = {
     -- general
     { 'Pocco81/auto-save.nvim' },
     { 'windwp/nvim-autopairs' },
+    {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+    },
 
     -- apariencia
     { 'wuelnerdotexe/vim-enfocado'},
