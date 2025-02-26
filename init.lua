@@ -11,6 +11,7 @@ require('plugins.keymaps')
 require('plugins.environment')
 require('plugins.autosave')
 require('plugins.autopairs')
+require('plugins.dnvimdashboard')
 
 -- apariencia
 require('plugins.themes')
