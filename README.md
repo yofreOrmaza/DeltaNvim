@@ -15,6 +15,14 @@
   <img src="https://github.com/user-attachments/assets/b105586a-0f03-4da9-b1c5-6d3d14e1b797" width="100%"/>
   <img src="https://github.com/user-attachments/assets/644d83f0-166b-4af9-aefd-ef8a995f9947" width="100%" />
 </div>
+<br>
+
+## 🧠 Animation of a moving sine wave ∿👨‍💻 with Copilot enabled in DeltaNvim
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/f066358e-77f8-4101-9eaf-7131f9426af0" />
+</div>
+
 
 # Requisitos:
 
