@@ -20,7 +20,7 @@
 ## 🧠 Animation of a moving sine wave ∿👨‍💻 with Copilot enabled in DeltaNvim
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/f066358e-77f8-4101-9eaf-7131f9426af0" />
+<img src="https://github.com/user-attachments/assets/f066358e-77f8-4101-9eaf-7131f9426af0" width="65%" />
 </div>
 
 
