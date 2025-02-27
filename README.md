@@ -3,10 +3,11 @@
 <div align="center">
   <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/yofreOrmaza/DeltaNvim/main?style=for-the-badge&color=%23FF0B30">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/yofreOrmaza/DeltaNvim?style=for-the-badge&color=%23FF0B30">
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/yofreOrmaza/DeltaNvim?display_name=tag&style=for-the-badge&color=%23FF0B30">
 </div>
 <br>
 
-<img src="https://github.com/user-attachments/assets/f42cfb8b-c1d3-4203-80ad-306f34f786a6" width="100%" />
+<img src="https://github.com/user-attachments/assets/67f37cd2-eac0-4880-bbf2-8ea52e3fe4d1" width="100%" />
 
 <br>
 
