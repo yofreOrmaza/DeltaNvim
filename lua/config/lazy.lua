@@ -44,6 +44,7 @@ local plugins = {
     { 'jose-elias-alvarez/null-ls.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    { 'github/copilot.vim' },
 
     -- lg/lsp
     { 'neovim/nvim-lspconfig' },
