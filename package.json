@@ -18,7 +18,6 @@
         "after:release": "echo '🚀 Release exitoso!'"
     },
     "changelog": {
-        "npx auto-changelog --stdout --commit-limit false",
         "preset": "conventionalcommits",
         "output": "CHANGELOG.md"
     },
