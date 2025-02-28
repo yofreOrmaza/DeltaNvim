@@ -24,14 +24,41 @@
 </div>
 
 
-# Requisitos:
+# Requirements:
 
 - **Python>3**
-- **Upgrade PIP** to the latest version with ```python.exe -m pip install --upgrade pip```
+- **PIP** to the latest version with 
+    - **Windows:**
+    ```python.exe -m pip install --upgrade pip```
+    - **Linux(Ubuntu):**
+    ```sudo apt install pip```
 - **Git**
 - **Nodejs**, **Npm**
-- In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
-- As ADMINISTRATOR **Install Neovim** on Windows Powershell through [Chocolatey](https://github.com/neovim/neovim/blob/master/INSTALL.md#chocolatey)
+    - **Windows:** nodejs [website](https://nodejs.org/)
+    - **Linux(Ubuntu):**
+        ```sh
+        sudo apt install curl
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        source ~/.bashrc
+        nvm list-remote
+        nvm install v<LTSversion>
+        nvm list
+        nvim install lts/...
+        nvm use v<LTSversion>
+        ```
+- **Neovim**
+    - **Windows:**
+        - In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
+        - As ADMINISTRATOR **Install Neovim** on Windows Powershell through [Chocolatey](https://github.com/neovim/neovim/blob/master/INSTALL.md#chocolatey)
+    - **Linux(Ubuntu):**
+        ```sh
+        sudo apt-get install software-properties-common
+        sudo add-apt-repository ppa:neovim-ppa/unstable
+        sudo apt-get update
+        sudo apt-get install neovim
+        sudo apt install python3-neovim
+        sudo apt-get install python-dev python-pip python3-dev python3-pip
+        ```
 
 # Usage
 
@@ -42,11 +69,11 @@
   - From the terminal, **go to the AppData/Local/DeltaNvim/ folder**
   - **Give permissions** to the install.ps1 file with ```Set-ExecutionPolicy Bypass -Scope Process -Force```, and **execute it** with ```.\install.ps1```
   - Restart the terminal
-  
+
 </details>
 
 <details>
-  <summary>💻 Linux/Mac</summary>
+  <summary>💻 Linux</summary>
 
   - **Clone the repository** to the location ```.config/```
   - From the terminal, **go to the .config/DeltaNvim/ folder**
@@ -54,6 +81,8 @@
   - Restart the terminal
 
 </details>
+
+---
 
 - In the windows terminal **enter DeltaNvim** using ```dnvim```
 - To **find the configuration folder for DeltaNvim** type from neovim ```:echo stdpath('config')```
@@ -82,23 +111,3 @@
     - And then on the line of code or the code fragment, press <kbd>Ctrl + c</kbd> <kbd>Ctrl + c</kbd>
     - Enter ```julia``` in the terminal to start the REPL **if** the terminal failed to launch in the previous step
     - **(Note)** Check the lua/plugins/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment) -> por defecto (wezterm para windows) -->
-
-# DeltaNvim Development Environments (Quickstart)
-
-<details>
-  <summary>Python + Mason</summary>
-
-  - Pyright (**manual installation** with mason) LSP
-  - Flake8 (**manual installation** with mason) Linter
-  - Mypy (**manual installation** with mason) Type checker
-  - Black (**manual installation** with mason) Formatter
-
-</details>
-
-<details>
-  <summary>Julia</summary>
-
-  - **Download Julia** from the [website](https://julialang.org/downloads/), and install
-  - Check out DeltaNvim's features for quick use of REPL
-
-</details>
