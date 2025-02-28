@@ -9,8 +9,22 @@
             "release": true
         }
     },
-    "changelog": "npx auto-changelog --stdout --commit-limit false",
+    "git": {
+        "commitMessage": "chore(release): v${version}",
+        "tagName": "v${version}"
+    },
+    "hooks": {
+        "after:bump": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
+        "after:release": "echo '🚀 Release exitoso!'"
+    },
+    "changelog": {
+        "npx auto-changelog --stdout --commit-limit false",
+        "preset": "conventionalcommits",
+        "output": "CHANGELOG.md"
+    },
     "devDependencies": {
+        "conventional-changelog": "^6.0.0",
+        "conventional-changelog-conventionalcommits": "^8.0.0",
         "release-it": "^18.1.2"
     }
 }
