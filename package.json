@@ -4,6 +4,12 @@
     "scripts": {
         "release": "release-it"
     },
+    "release-it": {
+        "github": {
+            "release": true
+        }
+    },
+    "changelog": "npx auto-changelog --stdout --commit-limit false",
     "devDependencies": {
         "release-it": "^18.1.2"
     }
