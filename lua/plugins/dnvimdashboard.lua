@@ -1,4 +1,4 @@
-local username = os.getenv('USER') or os.getenv('USERNAME')  -- Multiplataforma
+local username = os.getenv('USER') or os.getenv('USERNAME') or io.popen("whoami"):read("*l") or "UnknownUser"  -- Multiplataforma
 
 require('dashboard').setup {
     config = {
