@@ -7,19 +7,19 @@
     "release-it": {
         "github": {
             "release": true
+        },
+        "git": {
+            "commitMessage": "chore(release): v${version}",
+            "tagName": "v${version}"
+        },
+        "hooks": {
+            "after:bump": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
+            "after:release": "echo '🚀 Release exitoso!'"
+        },
+        "changelog": {
+            "preset": "conventionalcommits",
+            "output": "CHANGELOG.md"
         }
-    },
-    "git": {
-        "commitMessage": "chore(release): v${version}",
-        "tagName": "v${version}"
-    },
-    "hooks": {
-        "after:bump": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
-        "after:release": "echo '🚀 Release exitoso!'"
-    },
-    "changelog": {
-        "preset": "conventionalcommits",
-        "output": "CHANGELOG.md"
     },
     "devDependencies": {
         "conventional-changelog": "^6.0.0",
