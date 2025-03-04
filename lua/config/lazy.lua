@@ -45,6 +45,7 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     { 'github/copilot.vim' },
+    { 'nvim-telescope/telescope.nvim', tag = '0.1.8' },
 
     -- lg/lsp
     { 'neovim/nvim-lspconfig' },
