@@ -97,6 +97,11 @@
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
 - Available code actions 💡 press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the \<leader\> key) 
+- Telescope:
+    - Telescope find files with <kbd>leader</kbd> + <kbd>ff</kbd>
+    - Telescope live grep with <kbd>leader</kbd> + <kbd>fg</kbd>
+    - Telescope buffers with <kbd>leader</kbd> + <kbd>fb</kbd>
+    - Telescope help tags with <kbd>leader</kbd> + <kbd>fh</kbd>
 - Start or invoke Github Copilot with the command ```:Copilot setup```
     - Use the command ```:Copilot enable``` to enable the plugin
     - Use the command ```:Copilot disable``` to disable the plugin
