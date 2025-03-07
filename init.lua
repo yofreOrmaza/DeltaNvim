@@ -27,6 +27,7 @@ require('plugins.diagflownvim')
 require('plugins.nvimsatellite')
 require('plugins.nvimtrouble')
 require('plugins.nulllsnvim')
+require('plugins.peekdeltanvim')
 
 -- lg/lsp
 require('plugins.mason-global')
