@@ -45,6 +45,16 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     { 'github/copilot.vim' },
+    {
+        'toppair/peek.nvim',
+        event = { 'VeryLazy' },
+        build = 'deno task --quiet build:fast',
+        config = function()
+            require('peek').setup()
+            vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
+            vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
+        end,
+    },
 
     -- lg/lsp
     { 'neovim/nvim-lspconfig' },

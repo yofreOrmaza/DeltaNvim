@@ -46,6 +46,11 @@
         nvim install lts/...
         nvm use v<LTSversion>
         ```
+- **Deno**
+    - **Windows:**
+        - ```irm https://deno.land/install.ps1 | iex``` or check [Deno's Website](https://deno.com/) 
+    - **Linux/Mac:**
+        - ```curl -fsSL https://deno.land/install.sh | sh```
 - **Neovim**
     - **Windows:**
         - In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
@@ -59,7 +64,6 @@
         sudo apt install python3-neovim
         sudo apt-get install python-dev python-pip python3-dev python3-pip
         ```
-
 # Usage
 
 <details>
@@ -101,6 +105,7 @@
     - Use the command ```:Copilot enable``` to enable the plugin
     - Use the command ```:Copilot disable``` to disable the plugin
     - Use <kbd>Tab</kbd> to accept the suggestions
+- **Markdown preview** with ```:PeekOpen``` and ```:PeekClose``` (You can check 👀 the lua/plugins/peekdeltanvim.lua file if you want to modify the Live Server settings, such as the default browser for the preview and so on)
     
 <!-- - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
 - **REPL interactive in DeltaNvim** 👨‍💻
