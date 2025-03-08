@@ -100,8 +100,8 @@
 - **Quick and easy mappings** (👀 check lua/plugins/keymaps.lua file)
 - **Quickly navigate** between functions, classes and methods **using the hierarchical file view** with <kbd>ts</kbd>
 - Identification of problems in the code by **precise diagnostics** 🕵🏻‍♂️  with <kbd>tt</kbd>
-- Available code actions 💡 press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the \<leader\> key) 
-- Start or invoke Github Copilot with the command ```:Copilot setup```
+- Available **code actions** 💡 press <kbd>space</kbd> + <kbd>as</kbd> to display the options (in this case the space key corresponds to the \<leader\> key) 
+- Start or invoke **Github Copilot** with the command ```:Copilot setup```
     - Use the command ```:Copilot enable``` to enable the plugin
     - Use the command ```:Copilot disable``` to disable the plugin
     - Use <kbd>Tab</kbd> to accept the suggestions
