@@ -106,7 +106,7 @@
     - Use the command ```:Copilot disable``` to disable the plugin
     - Use <kbd>Tab</kbd> to accept the suggestions
 - **Markdown preview** with ```:PeekOpen``` and ```:PeekClose``` (You can check 👀 the lua/plugins/peekdeltanvim.lua file if you want to modify the Live Server settings, such as the default browser for the preview and so on)
-- **Support for KaTex:**
+- **Support for KaTex** for mathematical formulas in Markdown files:
     ```
     $$
     E = mc^2
