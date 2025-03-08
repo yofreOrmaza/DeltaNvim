@@ -106,6 +106,13 @@
     - Use the command ```:Copilot disable``` to disable the plugin
     - Use <kbd>Tab</kbd> to accept the suggestions
 - **Markdown preview** with ```:PeekOpen``` and ```:PeekClose``` (You can check 👀 the lua/plugins/peekdeltanvim.lua file if you want to modify the Live Server settings, such as the default browser for the preview and so on)
+- **Support for KaTex:**
+    ```
+    $$
+    E = mc^2
+    $$
+    ```
+    $E = mc^2$
     
 <!-- - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
 - **REPL interactive in DeltaNvim** 👨‍💻
