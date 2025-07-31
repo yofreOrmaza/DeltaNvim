@@ -32,6 +32,8 @@
     ```python.exe -m pip install --upgrade pip```
     - **Linux(Ubuntu):**
     ```sudo apt install pip```
+    - **Linux (Arch Linux)**
+    ```sudo pacman -S python-pip```
 - **Git**
 - **Nodejs**, **Npm**
     - **Windows:** nodejs [website](https://nodejs.org/)
@@ -64,6 +66,8 @@
         sudo apt install python3-neovim
         sudo apt-get install python-dev python-pip python3-dev python3-pip
         ```
+    - **Linux (Arch Linux)**
+        ```sudo pacman -S neovim```
 # Usage
 
 <details>
