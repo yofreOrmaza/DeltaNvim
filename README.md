@@ -80,6 +80,13 @@
   - From the terminal, **go to the .config/DeltaNvim/ folder**
   - **Give permissions** to the install.sh file with ```chmod +x install.sh```, and **execute it** with ```./install```
   - Restart the terminal
+  
+  <details>
+    <summary>¿Error <b>bash: /home/yourUser/.deno/envexport: No such file or directory</b>?</summary>
+
+Solution: `touch /home/yourUser/.deno/envexport`
+          
+  </details>
 
 </details>
 
