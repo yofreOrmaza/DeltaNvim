@@ -58,14 +58,7 @@
         - In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
         - As ADMINISTRATOR **Install Neovim** on Windows Powershell through [Chocolatey](https://github.com/neovim/neovim/blob/master/INSTALL.md#chocolatey)
     - **Linux(Ubuntu):**
-        ```sh
-        sudo apt-get install software-properties-common
-        sudo add-apt-repository ppa:neovim-ppa/unstable
-        sudo apt-get update
-        sudo apt-get install neovim
-        sudo apt install python3-neovim
-        sudo apt-get install python-dev python-pip python3-dev python3-pip
-        ```
+        <a href="https://github.com/neovim/neovim-releases/releases">https://github.com/neovim/neovim-releases/releases</a>
     - **Linux (Arch Linux)**
         ```sudo pacman -S neovim```
 # Usage
