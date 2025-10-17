@@ -53,6 +53,8 @@
         - ```irm https://deno.land/install.ps1 | iex``` or check [Deno's Website](https://deno.com/) 
     - **Linux/Mac:**
         - ```curl -fsSL https://deno.land/install.sh | sh```
+
+        - Crear archivo envexport: `touch /home/yourUser/.deno/envexport`
 - **Neovim**
     - **Windows:**
         - In Windows Powershell **Install Chocolatey** (Do not install Chocolatey through the nodejs installer, but from the script on the web site)
@@ -81,11 +83,6 @@
   - **Give permissions** to the install.sh file with ```chmod +x install.sh```, and **execute it** with ```./install```
   - Restart the terminal
   
-  <details>
-    <summary>¿Error <b>bash: /home/yourUser/.deno/envexport: No such file or directory</b>?</summary>
-
-Solution: `touch /home/yourUser/.deno/envexport`
-          
   </details>
 
 </details>
@@ -127,3 +124,52 @@ Solution: `touch /home/yourUser/.deno/envexport`
     - And then on the line of code or the code fragment, press <kbd>Ctrl + c</kbd> <kbd>Ctrl + c</kbd>
     - Enter ```julia``` in the terminal to start the REPL **if** the terminal failed to launch in the previous step
     - **(Note)** Check the lua/plugins/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment) -> por defecto (wezterm para windows) -->
+
+
+## Bugs
+
+### 1. Error Peekmd (Ocurre cuando se quiere inicar el server de markdown mediante el comando :PeekOpen): Error executing Lua callback: Vim:E475: Invalid value for argument cmd: 'deno' is not executable              
+stack traceback:                                                                                                    
+        [C]: in function 'jobstart'                                                                                 
+        ...e/.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/app.lua:53: in function 'init'                          
+        .../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:23: in function 'open'                          
+        .../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:113: in function <.../.local/share/DeltaNvim/laz
+y/peek.nvim/lua/peek/init.lua:104>
+
+Solution: (Para este punto el error surgio cuando deno ya ha sido instalado, pero al ingresar deno en la terminal este muestra lo siguiente:
+
+debuser@debpc:~$ deno
+bash: deno: command not found
+debuser@debpc:~$ deno --version
+bash: deno: command not found
+
+)
+
+Solution:
+
+- Encontrar la ubicación del ejecutable
+> cd ~/.deno/bin/
+
+- Copiar el ejecutable a la ruta /usr/local/bin
+
+> sudo cp -r deno /usr/local/bin/
+
+- Cerrar/Reiniciar la terminal
+
+### 2. Error: /home/yourUser/.deno/envexport: No such file or directory
+
+    Solution: `touch /home/yourUser/.deno/envexport`
+
+### 3. Error: Peek error: error: Module not found "file:///home/debuser/.local/share/DeltaNvim
+/lazy/peek.nvim/public/main.bundle.js".                                         
+Press ENTER or type command to continue
+
+Solution:
+ir a la ruta:
+> debuser@debpc:~/.local/share/DeltaNvim/lazy/peek.nvim
+
+ejecutar:
+> deno task --quiet build:fast
+
+Ingresar a DeltaNvim mediante dnvim en terminal y reinstalar peek
+> Instalar/Reinstalar peek
