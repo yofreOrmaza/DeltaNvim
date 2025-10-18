@@ -17,6 +17,13 @@
 </div>
 <br>
 
+## Table
+
+[Requirements](#requirements)<br>
+[Usage](#usage)<br>
+[Features](#features)<br>
+[Errors](#errors)
+
 ## 🧠 Animation of a moving sine wave ∿👨‍💻 with Copilot enabled in DeltaNvim
 
 <div align="center">
@@ -126,50 +133,53 @@
     - **(Note)** Check the lua/plugins/environment.lua file <u>if you prefer</u> to use a different terminal for REPL (specifically the vim.g.slime_target assignment) -> por defecto (wezterm para windows) -->
 
 
-## Bugs
+## Errors
 
-### 1. Error Peekmd (Ocurre cuando se quiere inicar el server de markdown mediante el comando :PeekOpen): Error executing Lua callback: Vim:E475: Invalid value for argument cmd: 'deno' is not executable              
+<details>
+<summary>Error executing Lua callback: Vim:E475: Invalid value for argument cmd: 'deno' is not executable</summary><br>
+
+**Error completo:**
+
+```sh
+Error executing Lua callback: Vim:E475: Invalid value for argument cmd: 'deno' is not executable 
 stack traceback:                                                                                                    
         [C]: in function 'jobstart'                                                                                 
         ...e/.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/app.lua:53: in function 'init'                          
         .../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:23: in function 'open'                          
-        .../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:113: in function <.../.local/share/DeltaNvim/laz
-y/peek.nvim/lua/peek/init.lua:104>
+        .../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:113: in function <.../.local/share/DeltaNvim/lazy/peek.nvim/lua/peek/init.lua:104>
+```
 
-Solution: (Para este punto el error surgio cuando deno ya ha sido instalado, pero al ingresar deno en la terminal este muestra lo siguiente:
+**¿Cuando ocurre?<br>**
+Ocurre cuando se quiere inicar el server de markdown mediante el comando :PeekOpen. Por lo tanto el indicativo de ```'deno' is not executable ``` muestra que deno a pesar de estar instalado en el sistema, el sistema no lo reconoce.
 
-debuser@debpc:~$ deno
-bash: deno: command not found
-debuser@debpc:~$ deno --version
-bash: deno: command not found
+**Solution:**<br>
 
-)
+1. Dirigirse a la ubicación del ejecutable mediante: ```cd ~/.deno/bin/```
 
-Solution:
+2. Copiar el ejecutable a la ruta /usr/local/bin mediante: ```sudo cp -r deno /usr/local/bin/```
 
-- Encontrar la ubicación del ejecutable
-> cd ~/.deno/bin/
+3. Cerrar/Reiniciar la terminal
 
-- Copiar el ejecutable a la ruta /usr/local/bin
+</details>
 
-> sudo cp -r deno /usr/local/bin/
+<details>
+<summary>Error: /home/yourUser/.deno/envexport: No such file or directory</summary><br>
 
-- Cerrar/Reiniciar la terminal
+**Solution:**<br>
 
-### 2. Error: /home/yourUser/.deno/envexport: No such file or directory
+1. Crear el archivo envexport mediante: ```touch /home/yourUser/.deno/envexport```
 
-    Solution: `touch /home/yourUser/.deno/envexport`
+</details>
 
-### 3. Error: Peek error: error: Module not found "file:///home/debuser/.local/share/DeltaNvim
+<details>
+<summary>Error: Peek error: error: Module not found "file:///home/yourUser/.local/share/DeltaNvim
 /lazy/peek.nvim/public/main.bundle.js".                                         
-Press ENTER or type command to continue
+Press ENTER or type command to continue</summary><br>
 
-Solution:
-ir a la ruta:
-> debuser@debpc:~/.local/share/DeltaNvim/lazy/peek.nvim
+**Solution:***<br>
 
-ejecutar:
-> deno task --quiet build:fast
+1. Dirigirse al directorio peek.nvim mediante: ```cd ~/.local/share/DeltaNvim/lazy/peek.nvim```
 
-Ingresar a DeltaNvim mediante dnvim en terminal y reinstalar peek
-> Instalar/Reinstalar peek
+2. Dentro del directorio peek.nvim ejecutar el siguiente comando: ```deno task --quiet build:fast```
+
+3. Reinstalar peek ingresando a DeltaNvim mediante el comando ```dnvim``` en la terminal mediante el comando ```:Lazy```
