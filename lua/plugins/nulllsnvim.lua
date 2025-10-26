@@ -1,6 +1,12 @@
 -- nulllsnvim.lua
 local null_ls = require('null-ls')
 
+local status, null_ls = pcall(require, "null-ls")
+if not status then
+  vim.notify("null-ls (via none-ls) not found")
+  return
+end
+
 null_ls.setup({
   sources = {
     -- DeltaNvim Python

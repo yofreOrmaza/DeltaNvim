@@ -41,7 +41,8 @@ local plugins = {
     { 'dgagn/diagflow.nvim' },
     { 'lewis6991/satellite.nvim'},
     { 'folke/trouble.nvim' },
-    { 'jose-elias-alvarez/null-ls.nvim',
+    -- { 'jose-elias-alvarez/null-ls.nvim',
+    { 'nvimtools/none-ls.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     { 'github/copilot.vim' },

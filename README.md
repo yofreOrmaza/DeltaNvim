@@ -96,6 +96,7 @@
 
 ---
 
+- Install requirements with the command `pip install -r requirements.txt`
 - In the windows terminal **enter DeltaNvim** using ```dnvim```
 - To **find the configuration folder for DeltaNvim** type from neovim ```:echo stdpath('config')```
 - **Recommended font:** In the fonts folder there is a set of JetBrains fonts, from File Explorer select all fonts and right click on install. Then from the windows console configuration (powershell or cmd) go to the Profiles section and select Defaults, then select Appearance, and in the Font face box select a JetBrains font (**JetBrainsMono Nerd Font Mono** as a personal recommendation) **This font allows the display of icons for both folders and file type, and also for special characters** that aesthetically improve the visualization of the code. And finally click on save.
